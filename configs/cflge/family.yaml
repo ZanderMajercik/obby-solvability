@@ -1,0 +1,10 @@
+# CFLGE family: cell-free latent Go-Explore (k-NN density in an encoder's latent space).
+extends: ../gess.yaml
+family: cflge
+flags:
+  selection-mode: density
+  cell-free: true
+  pool-size: 120000
+  skip-slot-trajectories: true
+  encoder-epochs: 4
+  encoder-minibatch: 2048

@@ -1,0 +1,4 @@
+description: GE-RS - the policy drives 50% of restores, sticky-random actions the rest
+extends: policy.yaml
+variant: goexplore_random_selection
+wandb_tags: [goexplore, archive, actpct50, no_polsel]

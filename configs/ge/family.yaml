@@ -1,0 +1,3 @@
+# GE family: Go-Explore with a cell archive.
+extends: ../gess.yaml
+family: ge

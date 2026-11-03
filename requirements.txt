@@ -1,0 +1,11 @@
+# Python packages for the simulator scripts, the solvers and the figures.
+# Install PyTorch with CUDA first (see the README), then: pip install -r requirements.txt
+# Tested versions are given as lower bounds.
+numpy>=2.0
+pandas>=2.2
+matplotlib>=3.9
+tqdm>=4.66
+pyyaml>=6.0
+flask>=3.0         # infer.py and the design-tool backend (scripts/slider_backend.py)
+requests>=2.31     # scripts/slider_backend_test.py
+wandb>=0.17        # imported by the training and search code; logging is off by default

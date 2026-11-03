@@ -1,0 +1,4 @@
+description: GE - random exploration, count-based cell selection
+extends: family.yaml
+variant: goexplore_vanilla
+wandb_tags: [goexplore, vanilla, nopol]

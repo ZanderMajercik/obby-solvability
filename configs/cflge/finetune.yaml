@@ -1,0 +1,7 @@
+description: CFLGE-FT - the encoder, trained further during the search
+extends: family.yaml
+variant: cflge_finetune
+wandb_tags: [cflge, finetune, dynamics_ckpt, nopol]
+flags:
+  train-encoder: true
+  encoder-init-ckpt: ${DYN_CKPT}

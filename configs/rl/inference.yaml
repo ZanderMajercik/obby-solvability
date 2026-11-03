@@ -1,0 +1,11 @@
+description: RL - policy rollouts in 8192 worlds until 5 solves or TIMEOUT per query
+extends: family.yaml
+variant: rl_inference
+env:
+  SEED: 1               # first attempt's seed; each restart adds 1
+  MAX_SOLVES: 5
+flags:
+  num-trials: 1
+  single-instance: true
+  episode-len: 1000
+  max-solves: ${MAX_SOLVES}

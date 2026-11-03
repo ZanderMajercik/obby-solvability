@@ -1,0 +1,5 @@
+# GE with the policy (GE-RS, GE-PS, GE-RL).
+extends: family.yaml
+flags:
+  policy: ${POLICY_CKPT}
+  skip-slot-trajectories: true

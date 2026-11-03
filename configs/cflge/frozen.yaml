@@ -1,0 +1,7 @@
+description: CFLGE-Frozen - the encoder, not trained
+extends: family.yaml
+variant: cflge_frozen
+wandb_tags: [cflge, frozen, dynamics_ckpt, nopol]
+flags:
+  density-latent: dynamics_ckpt
+  dynamics-ckpt-path: ${DYN_CKPT}

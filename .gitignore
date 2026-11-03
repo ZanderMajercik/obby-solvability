@@ -1,0 +1,40 @@
+# Build outputs
+/build
+/build-debug
+/out
+/.vs
+/CMakeSettings.json
+/obby-dsl/build
+__pycache__/
+*.egg-info/
+.DS_Store
+
+# Checkpoints: only the two checkpoints are tracked (Git LFS, see
+# .gitattributes); anything else under ckpts/ stays local.
+/ckpts/*
+!/ckpts/policy.pth
+!/ckpts/dynamics_encoder.pth
+# Run outputs
+/results/
+# PBGE policy checkpoints (configs/ge/pbge.yaml --ckpt-dir)
+/GoExplorePBGE/
+/wandb/
+/logs/
+*.pt
+/*.out
+/*.zip
+
+# Files the design-tool backend writes to its working directory
+/SavedObbies/
+/SavedPlayerTrajectories/
+/Queries/
+
+# JSON is ignored by default; the benchmark queries in query_data/ are tracked.
+*.json
+
+# Agent folders and local env files
+.claude/
+.codex/
+.agents/
+.env
+*.env

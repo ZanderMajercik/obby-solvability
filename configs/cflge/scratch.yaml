@@ -1,0 +1,6 @@
+description: CFLGE (scratch) - encoder trained from scratch during the search
+extends: family.yaml
+variant: cflge_scratch
+wandb_tags: [cflge, scratch, nopol]
+flags:
+  train-encoder: true

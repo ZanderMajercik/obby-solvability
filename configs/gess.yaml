@@ -1,0 +1,14 @@
+# Shared by every method that runs scripts/go_explore_search_solvable.py:
+# the GE family (GE, GE-RS, GE-PS, GE-RL, PBGE) and the CFLGE family.
+extends: base.yaml
+flags:
+  gpu-sim: true
+  reward-mode: Dense1
+  num-steps: 40               # Go-steps per run
+  exploration-steps: 200
+  max-traj-steps: 3000
+  break-when-solved: true
+  num-x-bins: 32
+  num-y-bins: 32
+  num-z-bins: 10
+  num-t-bins: 10

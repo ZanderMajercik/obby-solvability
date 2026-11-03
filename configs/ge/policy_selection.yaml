@@ -1,0 +1,6 @@
+description: GE-PS - GE-RS plus policy-based cell selection
+extends: policy.yaml
+variant: goexplore_policy_selection
+wandb_tags: [goexplore, archive, policy_selection]
+flags:
+  use-policy-selection: true

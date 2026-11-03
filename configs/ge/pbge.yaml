@@ -1,0 +1,18 @@
+# PBGE overrides two shared bin counts of gess.yaml: 4 z bins, and 16 time bins
+# on levels with animated objects.
+description: PBGE - policy-based Go-Explore (a goal-conditioned policy returns to archived cells)
+extends: family.yaml
+variant: goexplore_pbge
+wandb_tags: [goexplore, pbge, policy]
+env:
+  PYTORCH_CUDA_ALLOC_CONF: expandable_segments:True   # limits CUDA allocator fragmentation
+flags:
+  num-z-bins: 4
+  num-t-bins: 16
+  level-types: [Plank, TriplePlank, ThickPathJumps, Tightrope, LavaStairs, LavaSpinner,
+                MoveAnywhereLavaSpinner, DoubleLavaSpinner, LavaCheckerboard, RotatingPlatforms,
+                WallJumps, Truss, LavaRingDrop, SideToSideBlocks]
+  policy-based: true
+  num-channels: 256
+  steps-per-update: 40
+  ckpt-dir: GoExplorePBGE

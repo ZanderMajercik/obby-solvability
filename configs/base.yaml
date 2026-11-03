@@ -1,0 +1,11 @@
+# Shared by every method. Each value under env is a default: a variable set by
+# the caller (e.g. SEEDS=31 scripts/bash/run_method.sh vanilla) overrides it.
+env:
+  SEEDS: "31 32 33 34 35"
+  TIMEOUT: 300            # wall-clock seconds per run (per query for RL inference)
+  NUM_WORLDS: 8192
+  GPU_ID: 0
+  QUERY_ROOT: query_data
+  POLICY_CKPT: ckpts/policy.pth             # policy
+  DYN_CKPT: ckpts/dynamics_encoder.pth       # encoder
+  WANDB_PROJECT: obby-solvability   # logs to your own wandb account (WANDB_ENTITY, else your default)

@@ -1,0 +1,9 @@
+description: RL-FT - PPO finetuning of the policy on each query until solved or TIMEOUT
+extends: family.yaml
+variant: rl_finetune
+flags:
+  num-updates: 9999
+  steps-per-update: 40
+  log-every: 10
+  solve-threshold: 10.0
+  break-when-solved: true

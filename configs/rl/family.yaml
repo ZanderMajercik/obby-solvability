@@ -1,0 +1,8 @@
+# RL family: the policy alone, no Go-Explore.
+# The run scripts add the per-run flags (--gpu-id, --seed, the query).
+extends: ../base.yaml
+family: rl
+flags:
+  gpu-sim: true
+  ckpt-path: ${POLICY_CKPT}
+  num-worlds: ${NUM_WORLDS}

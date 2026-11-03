@@ -1,0 +1,6 @@
+description: GE-RL - policy actions 100% of the time
+extends: policy.yaml
+variant: goexplore_only_rl_policy
+wandb_tags: [goexplore, archive, actpct100, rl_policy, no_polsel]
+flags:
+  use-action-percent: 1.0
